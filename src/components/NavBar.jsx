@@ -18,6 +18,14 @@ const items = [
     {
       label: 'Contact Us',
       key:"contactUs",
+    },
+    {
+      label: 'Log in',
+      key:"login",
+    },
+    {
+      label: 'Register',
+      key:"register",
     }
   ];
 
@@ -40,6 +48,12 @@ export default function NavBar() {
             break;
         case 'contactUs':
             navigate('/contact_us');
+            break;
+        case 'login':
+            navigate('/login');
+            break;
+        case 'register':
+            navigate('/register');
             break;
     }
   };
