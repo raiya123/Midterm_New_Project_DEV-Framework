@@ -44,6 +44,10 @@ const motorcycles = `[
         "image":"https://www.ncxhonda.com/motorcycles/storage/app/uploads/Product%26Service/Click-150white.png"
     }
 ]`
+const fectchApi = async () => {
+    const res = await fetch("https://lyhuoy.github.io/jsonapi/api.json")
+    return res.json()
+  }
 const Service = {
     getMotorcycles: () => {
         return JSON.parse(motorcycles)

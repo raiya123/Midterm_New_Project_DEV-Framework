@@ -14,8 +14,13 @@ const contentStyle = {
   background: '#171b24',
 };
 
+// const fectchApi = async () => {
+//   const res = await fetch("https://lyhuoy.github.io/jsonapi/api.json")
+//   return res.json()
+// }
 export default function Home() {
   const [Motorcycles, setMotorcycles] = useState([])
+  // const {data} = useQuery(['datas'], fectchApi)
   useEffect(() => {
     let motorCycles = Service.getMotorcycles()
     setMotorcycles(motorCycles)
@@ -31,7 +36,7 @@ export default function Home() {
           </h3>
         </div>)}
       </Carousel>
-      <img src="https://th.bing.com/th/id/OIF.TbMX7qN1SsX7w8JL64P5QQ?w=315&h=153&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" height="400px" width="100%"/>
+      <img src="https://www.ncxhonda.com/storage/app/uploads/Posts/88adaf09f9f6479893261aeb056d95963ecfbe18/278541600_1381672682307092_2116113773485727039_n.jpg" alt="" width="100%" height="500px" />
     </div>
   )
 }

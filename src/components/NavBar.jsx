@@ -55,6 +55,7 @@ export default function NavBar() {
         case 'register':
             navigate('/register');
             break;
+            
     }
   };
   return <Menu contentEditable={false} theme='light' style={{justifyContent:"center"}} onClick={onClick} selectedKeys={[current]} tabIndex={-1} mode="horizontal" items={items} />;

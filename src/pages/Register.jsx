@@ -4,33 +4,37 @@ const { Meta } = Card;
 
 export default function ContactUs() {
   return (
-    <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-        <div style={{width:"800px"}}>
-        <Row style={{marginTop:"50px"}} justify="space-evenly" align='center'>
-            <Col span={24}>
-                <h1>Contact Us</h1>
-            </Col>
-            <Col span={24}>
-                <h3>Hello register page</h3>
-            </Col>
-            <Col span={11}>
-            <Card
-                    hoverable
-                    cover={<img alt="example" src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Posts/60411fc26427fabc5655ae74fdc33eb850c90db5/honda-factory.jpg" />}
-                >
-                    <Meta title="N.C.X. HONDA CO., LTD." description="Veng Sreng Street, Tropang Thloeung, Sangkat Chom Chao, Khan Pursenchey, Phnom Penh, Cambodia." />
-                </Card>
-            </Col>
-            <Col span={11}>
-                <Card
-                    hoverable
-                    cover={<img alt="example" src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Posts/df333f8d9a897fa1bd506f83cc6191c4c94f87bf/honda-factory1.jpg" />}
-                >
-                    <Meta title="Phnom Penh HONDA (Intrnational Airport)" description="Russian Blvd, Phum Kbal Damrey, Sangkat Kakab, Khan Por Senchey, Phnom Penh, Cambodia." />
-                </Card>
-            </Col>
-        </Row>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ width: "800px" }}>
+                <Row style={{ marginTop: "50px" }} justify="space-evenly" align='center'>
+                    <Col span={24}>
+                        <h1>Register</h1>
+                    </Col>
+                    <Col span={24}>
+                        <form>
+                            <div className="input-container">
+                                <label>Username</label>
+                                <input type="text" name="uname" required />
+                            </div><br />
+                            <div className="input-container">
+                                <label>Email</label>
+                                <input type="text" name="email" required />
+                            </div><br />
+                            <div className="input-container">
+                                <label>Password </label>
+                                <input type="password" name="pass" required />
+                            </div><br />
+                            <div className="input-container">
+                                <label>Confirm Password </label>
+                                <input type="password" name="pass" required />
+                            </div><br />
+                            <div className="button-container">
+                                <button type='submit'>Submit</button>
+                            </div>
+                        </form>
+                    </Col>
+                </Row>
+            </div>
         </div>
-    </div>
   )
 }

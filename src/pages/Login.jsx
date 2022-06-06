@@ -15,11 +15,11 @@ export default function ContactUs() {
                             <div className="input-container">
                                 <label>Username </label>
                                 <input type="text" name="uname" required />
-                            </div>
+                            </div><br />
                             <div className="input-container">
                                 <label>Password </label>
                                 <input type="password" name="pass" required />
-                            </div>
+                            </div><br />
                             <div className="button-container">
                                 <input type="submit" />
                             </div>
@@ -31,3 +31,4 @@ export default function ContactUs() {
         </div>
     )
 }
+
